@@ -29,12 +29,12 @@ public class Window extends JFrame implements Observer{
         }
     }
 
-    public void setProgressValue(int id,int val){
-        bars.get(id).setValue(val);
-    }
 
     public void update(Observable o,Object arg){
 
+        int val = ((Fir)o).getVal();
+        int id = ((Fir)o).getId();
+        bars.get(id).setValue(val);
     }
 
 }

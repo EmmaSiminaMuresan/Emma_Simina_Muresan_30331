@@ -5,6 +5,7 @@ import java.util.Observable;
 public class Fir extends Observable implements Runnable {
     Thread t;
     int id;
+    int val = 0;
     Window win;
     int processorLoad;
     int priority;
@@ -36,7 +37,19 @@ public class Fir extends Observable implements Runnable {
                 j++;j--;
             }
             c++;
-            this.win.setProgressValue(id, c);
+            val = c;
+            //this.win.setProgressValue(id, c);
+            setChanged();
+            notifyObservers();
+
         }
+    }
+
+    public int getVal(){
+        return  val;
+    }
+
+    public int getId(){
+        return id;
     }
 }
