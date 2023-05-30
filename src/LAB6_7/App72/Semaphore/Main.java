@@ -1,4 +1,4 @@
-package App72.Semaphore;
+package LAB6_7.App72.Semaphore;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;

@@ -1,4 +1,4 @@
-package App73.Countdownlatch;
+package LAB6_7.App73.Countdownlatch;
 
 import java.util.concurrent.CountDownLatch;
 

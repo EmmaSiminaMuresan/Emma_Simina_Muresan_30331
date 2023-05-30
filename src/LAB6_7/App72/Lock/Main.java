@@ -1,4 +1,4 @@
-package App72.Lock;
+package LAB6_7.App72.Lock;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
